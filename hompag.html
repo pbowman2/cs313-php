@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wilkommen ans die partie!!!</title>
+        <link rel="stylesheet" type="text/css" href="stle.css">
+        <script src="myscript.js"></script>
+    </head>
+    <body>
+        <h1>The Experimental Homepage</h1>
+        <div class="tab">
+            <button class="tablink" onclick="loadTab(event,'aboutPage')" id="OpenMe">
+                About
+            </button>
+            <button class="tablink" onclick="loadTab(event,'ourHost')">
+                Our Host
+            </button>
+            <button class="tablink" onclick="loadTab(event,'experiments')">
+                The Experiments
+            </button>
+        </div>
+        <div id="aboutPage" class="tabcontent" >
+            <p>
+                This is a landing page for a web design class. If
+                you want to know more about our host go ahead and
+                click on the host tab up above. To see some work
+                our host has done go ahead and click on the experiments
+                tab. Go ahead and have a look around but don't go too far.
+            </p> 
+        </div>
+        <div id="ourHost" class="tabcontent">
+            <img src="ourGraciousHostBack.png" onmouseover="changePic()" onmouseout="changePicBack()" id="pic" /> 
+            <p>
+            This is Paul our gracious host and creator of this website.
+            He is looking for an internship/job right now so if you know
+            of something go ahead and hook him up if you will. It would 
+            be greatly appreciated.
+            </p> 
+        </div>
+        <div id="experiments" class="tabcontent">
+            <p>
+                nothing here yet but just you wait all sorts of 
+                cool stuff is in the works.
+            </p>
+        </div>
+        <script>
+            document.getElementById("OpenMe").click();
+        </script>
+    </body>
+</html>
